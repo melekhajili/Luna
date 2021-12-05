@@ -1,0 +1,113 @@
+*{
+    margin:0;
+    padding: 0;
+}
+
+.navbar {
+    background-color: rgb(62, 3, 90);
+    overflow: hidden;
+    padding-left: 40px;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    background:transparent;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    padding-right: 100px;
+    object-fit: cover;
+    float: right;
+}
+.fa-home::before{
+    content: "\f015";
+    color: blue;
+
+}
+.fa-users::before{
+    content:"\f0c0";
+    color: blue;
+
+}
+.fa-project-diagram::before{
+    content: "\f542";
+    color: blue;
+
+}
+.fa-moon::before{
+    content: "\f186";
+    color: blue;
+
+}
+
+.navbar a {
+    float: left;
+    color: rgb(211, 200, 214);
+    padding: 14px 36px;
+    text-decoration: none;
+    font-size: 30px;
+    display: block;
+    margin: 0 auto;
+}
+.navbar a:hover{
+    color:rgb(105, 36, 218);
+    background-color: rgb(166, 202, 235);
+}
+
+video {
+    width: 100%;
+}
+.ourvideo .hidden{
+    z-index: 1;
+    height: 100%;
+    width: 100%;
+    font-size: 80px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    /* color: rgb(133, 223, 30); */
+    font-family: 'Montserrat',sans-serif;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 1px rgb(52, 12, 145);
+    transition: all 0.7s;
+    opacity: 0;
+}
+
+.content {
+    color: whitesmoke;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    /* background-color: rgb(107, 0, 107); */
+    background-image: url("bck3.png");
+    background-repeat: none;
+    /* background-size: cover; */
+    
+    border-radius: 20px;
+}
+.content p{
+    font-size: 20px;
+}
+
+
+
+
+
+html:hover .hidden {
+    opacity: 1;
+}   
+
+.clock {
+    position: absolute;
+    color: white;
+    font-size: 30px;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    letter-spacing: -1.9px;
+    left: 80%;
+    margin-top: 20px;
+}
